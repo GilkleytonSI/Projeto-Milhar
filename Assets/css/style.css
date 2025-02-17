@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    padding: 5px 10px;
+    width: 300px;
+    background-color: #f9f9f9;
+}
+.input-container .input-icon {
+    margin-right: 8px;
+    color: #007BFF;
+    font-size: 18px;
+}
+
+input[type="number"] {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    background: transparent;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+button i {
+    font-size: 18px;
+}
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Ajustado para 5 caixas por linha */
+    gap: 8px; /* Reduzido o espaço entre as caixas */
+    margin-top: 10px;
+}
+
+.box {
+    width: 178px;
+    height: 200px;
+    background: linear-gradient(to bottom, #fae0e6, #dd8944); /* Fundo gradiente */
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border: 2px solid #d32114;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    
+}
+.box div {
+    margin: 5px 0;
+}
+.box-title {
+    /* background: #000000a6; */
+    color: #000;
+    font-size: 11px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 5px; /* Adiciona espaçamento superior para descolar das margens */
+}
+.box-phone {
+    font-size: 10px;
+    font-weight: 800;
+    
+}
+.box-numbers {
+    font-size: 15px;
+    font-weight: 900;
+    background: url('../img/onca2.png') no-repeat center;
+    background-size: 75%; /* Ajusta o tamanho da imagem */
+    /* background: #000000a6; */
+    color: #000;
+    line-height: 1.0;  /*Ajusta o espaçamento entre os números */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.box-subtitle {
+    font-size: 9px;
+    font-weight: bold;
+    margin-top: 5px;
+    line-height: 1;
+    color: #380906;
+}
+.qr-code {
+    position: absolute;
+    bottom: 65px;
+    right: 3px;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+@media print {
+    body{
+        margin: 0;
+    }
+    h1{
+        display: none;
+    }
+
+    .input-container{
+        display: none;
+    }
+    .button-container{
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: repeat(4, 1fr); /* Garante 5 caixas por linha na impressão */
+        grid-template-rows: repeat(5, auto); /* 5 na vertical */
+    }
+
+    .box {
+        width: auto;
+        height: 200px;
+        margin: 0;
+        padding: 5px;
+        /* background: url('../img/onca2.png') no-repeat center !important; */
+        background-size: cover !important;
+        -webkit-print-color-adjust: exact; /* Força o navegador a imprimir as cores exatas */
+        print-color-adjust: exact;
+    }
+
+    input, button {
+        display: none;
+    }
+}
