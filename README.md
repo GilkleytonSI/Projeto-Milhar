@@ -34,7 +34,8 @@ O sistema conta com uma **geração de bilhetes** com QR Code impressão otimiza
 3. Abra o arquivo `index.html` no navegador.
 
 ## 📷 Demonstração
-_Aqui você pode adicionar imagens ou GIFs mostrando o funcionamento do sistema._
+![Tela](https://github.com/GilkleytonSI/Projeto-Milhar/blob/main/Assets/img/1.JPG)
+![Tela](https://github.com/GilkleytonSI/Projeto-Milhar/blob/main/Assets/img/2.JPG)
 
 ## 🔧 Melhorias Futuras
 - [ ] Criação de Dashboard exibindo estatísticas de bilhetes gerados, pessoas cadastradas e campanhas criadas.
